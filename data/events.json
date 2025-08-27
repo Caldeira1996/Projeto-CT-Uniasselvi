@@ -1,0 +1,16 @@
+[
+  {
+    "type": "Campanha",
+    "title": "Semana de Prevenção ao Trabalho Infantil",
+    "date": "Junho",
+    "place": "Escolas e CRAS",
+    "summary": "Oficinas e rodas de conversa com famílias e educadores."
+  },
+  {
+    "type": "Palestra",
+    "title": "ECA para Famílias",
+    "date": "Mensal",
+    "place": "Centro Comunitário",
+    "summary": "Direitos e canais de denúncia; linguagem simples."
+  }
+]

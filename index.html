@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConectaCT — Portal Colaborativo do Conselho Tutelar</title>
+  <meta name="description" content="Informações do ECA, como acionar o Conselho Tutelar, agenda de ações e materiais educativos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap nav">
+      <div class="brand" aria-label="ConectaCT">🔵 ConectaCT</div>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#eca">ECA</a>
+        <a href="#como">Como acionar</a>
+        <a href="#acoes">Ações & Eventos</a>
+        <a href="#materiais">Materiais</a>
+        <a href="#contatos">Contatos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <h1 id="titulo-hero">Protegendo direitos de crianças e adolescentes</h1>
+      <p class="muted">Informações confiáveis do ECA, passo a passo para acionar o Conselho Tutelar, agenda de ações e materiais educativos.</p>
+      <div class="cta">
+        <a class="btn primary" href="#como">Como denunciar / acionar</a>
+        <a class="btn secondary" target="_blank" rel="noopener"
+          href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos">
+          Denunciar on-line (Gov.br)
+        </a>
+        <a class="btn secondary" href="tel:100">Discar 100 (24h)</a>
+      </div>
+    </section>
+
+    <section id="eca" aria-labelledby="eca-title">
+      <h2 id="eca-title">ECA em linguagem simples</h2>
+      <div class="grid cols-3">
+        <article class="card"><h3>O que é</h3><p>O Estatuto da Criança e do Adolescente (Lei 8.069/1990) garante direitos e proteção integral.</p></article>
+        <article class="card"><h3>Princípios</h3><p>Prioridade absoluta; proteção integral; melhor interesse; convivência familiar e comunitária.</p></article>
+        <article class="card"><h3>Conselho Tutelar</h3><p>Órgão autônomo e permanente que zela pelo cumprimento dos direitos (Art. 131/136 do ECA).</p></article>
+      </div>
+      <p class="muted small">Fontes: Planalto (Lei 8.069) e Governo Federal/MDHC.</p>
+    </section>
+
+    <section id="como" aria-labelledby="como-title">
+      <h2 id="como-title">Como acionar o Conselho Tutelar</h2>
+      <ol>
+        <li><strong>Risco imediato?</strong> Ligue 190 (Polícia Militar).</li>
+        <li><strong>Violação de direitos?</strong> Disque 100 (24h) ou procure o Conselho Tutelar da sua cidade.</li>
+        <li><strong>Registre informações essenciais:</strong> o que aconteceu, quando, onde e quem está em risco. Evite expor dados sensíveis no site.</li>
+      </ol>
+      <div class="cta">
+        <a class="btn primary" href="tel:100">Discar 100</a>
+        <a class="btn secondary" target="_blank" rel="noopener" href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos">Ouvidoria DH (on-line)</a>
+      </div>
+      <p class="muted">Para contatos do CT local, veja a seção <a href="#contatos">Contatos úteis</a>.</p>
+    </section>
+
+    <section id="acoes" aria-labelledby="acoes-title">
+      <h2 id="acoes-title">Ações & Eventos</h2>
+      <div id="event-list" class="list" aria-live="polite" aria-busy="true">
+        <!-- Populado via JS -->
+      </div>
+      <p><a class="btn secondary" id="btn-form-2" target="_blank" rel="noopener" href="#">Enviar ação / evento</a></p>
+    </section>
+
+    <section id="materiais" aria-labelledby="materiais-title">
+      <h2 id="materiais-title">Materiais</h2>
+      <ul>
+        <li><a target="_blank" rel="noopener" href="https://www.planalto.gov.br/ccivil_03/leis/l8069.htm">Lei 8.069/1990 — ECA (Planalto)</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.gov.br/mdh/pt-br/navegue-por-temas/crianca-e-adolescente/conselhos-tutelares">Conselhos Tutelares — MDHC</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos">Disque 100 — Denúncia</a></li>
+      </ul>
+    </section>
+
+    <section id="contatos" aria-labelledby="contatos-title">
+      <h2 id="contatos-title">Contatos úteis (personalizar para sua cidade)</h2>
+      <ul id="contact-list" class="contacts">
+        <!-- Populado via JS a partir de data/contacts.json -->
+      </ul>
+      <p class="muted">Este portal <strong>não coleta denúncias</strong>. Use os canais oficiais acima.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>ConectaCT</strong> — Projeto de Extensão acadêmico. Conteúdo informativo; não substitui orientação jurídica. Atualizado em <span id="dt"></span>.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
